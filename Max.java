@@ -20,4 +20,5 @@ public class Max{
     int b[]={44,66,99,77,33,22,55};  
     System.out.println("Largest: "+getLargest(a,6));  
     System.out.println("Largest: "+getLargest(b,7));  
-    }}  
+    }
+}

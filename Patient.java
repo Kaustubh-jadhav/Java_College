@@ -23,16 +23,11 @@ public class Patient
         System.out.print("Enter Patient HRCT report :");
         p.hrct_report=sc.nextInt();
 
-        if (p.Patient_oxy_level<95)
+        if (p.Patient_oxy_level<95 && p.hrct_report > 10)
         {
-            throw new ArithmeticException("Patient Level is Below 95 Emorgancy");
+            throw new ArithmeticException("Patient is covid postive");
         }
-        if (p.hrct_report > 10)
-        {
-            throw new ArithmeticException("HRCT is High");
-        }
-
-
+    
         System.out.println("Name :"+p.Patient_name);
         System.out.println("Age :"+p.Patient_age);
         System.out.println("Patient Oxygen level :"+p.Patient_oxy_level);
